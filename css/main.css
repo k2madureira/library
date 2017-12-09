@@ -1,0 +1,168 @@
+html,body{
+	font-family: 'Saira Semi Condensed', sans-serif;
+	color: #fff;
+	background-image: url('../img/books3.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+body:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,.8);
+}
+.vanish{
+	display:none;
+}
+.error{
+	background-color: #FF8C00;
+	position: fixed;
+	width: 70%;
+	height: 2em;
+	margin-top: 0.5em;
+	padding-top: 0.1em;
+	text-align: center;
+}
+
+.title{
+	text-align: center;
+	font-size: 5em;
+	z-index: 1;
+}
+
+.subtitle{
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.info{
+	width: 90%;
+	height: 70%;
+	margin: 0 auto;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.colum{
+	width: 48%;
+	height: 65%;
+	margin: 5% .5% 0;	
+	border: 2px solid #fff;
+	box-sizing: border-box;
+	padding: 1em;
+	position: relative;
+	
+}
+.colum-masc{
+	background-color: rgba(0,0,0,.5);
+}
+
+.colum ul li{
+	font-size: 2em;
+	box-sizing: border-box;
+	padding: 1em;
+	text-align: center;
+}
+
+.colum form{
+	display: flex;
+	flex-direction: column;
+}
+
+.field {
+	width: 100%;
+	height: 1em;
+	box-sizing: border-box;
+	padding: 1em;
+	margin: 0.5em 0;
+}
+
+.button {
+	background-color: #fff;
+	border: #fff;
+	box-sizing: border-box;
+	padding: 1em;
+}
+.loader {
+	  border: 0.2em solid #f3f3f3;
+	  border-radius: 50%;
+	  border-top: 0.2em solid #3498db;
+	  width: 2em;
+	  height: 2em;
+	  margin-left: 45%;
+	  margin-top: 15%;
+	  -webkit-animation: spin 2s linear infinite; /* Safari */
+	  animation: spin 2s linear infinite;
+}
+.list {
+	width: 100%;
+	height: 7em;
+	margin-top: 1%;
+	color: #fff;
+	font-size: 2em;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.books tr{
+	
+	height: 1em;
+	border: 1px solid black;
+	padding: 0;
+	
+}
+.books td{
+	width: 10%;
+	border: 1px solid black;
+	font-size: 0.4em;
+	margin-left: 0.5em;
+	text-align: center;
+	font-size: 0.6em;
+	color: black; 
+	text-align: center;
+	background-color: white;
+
+}
+.list-title-tr .title-tr-td{
+	width: 10%;
+	height: 1em;
+	background-color: #FFD700;
+	border: 1px solid black;
+	padding: 0;
+	margin-left: 0.5em;
+	text-align: center;
+	font-size: 0.6em;
+	color: black; 
+}
+
+
+
+
+
+
+
+
+
+footer{
+	z-index: 1;
+	text-align: center;
+}
+
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

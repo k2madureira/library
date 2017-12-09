@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>treasures of eternity</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
+</head>
+<body>
+	<h1 class="title">Library of treasures</h1>
+	
+	<section class="info">
+	<div class="error vanish">Por favor preencha todos os campos</div>
+		<div class="colum colum-masc">
+		<h2 class="subtitle">List of treasures the library</h2>
+			<div class="loader vanish"></div>
+			<div class="list">
+				<table class="books">
+					<tr class="list-title-tr">
+						<td class="title-tr-td">Book</td>
+						<td class="title-tr-td">Author</td>
+						<td class="title-tr-td">Type</td>
+					</tr>
+
+
+				</table>
+			</div>
+							
+			
+		</div>
+		<div class="colum">
+			<h2 class="subtitle">Register - Your treasure</h2>
+			<form type="post">
+				<label>Book:	<input type="text" id="book"   placeholder="Name of book"   class="field"></label>
+				<label>Author:  <input type="text" id="author" placeholder="name of author" class="field"></label>
+				<label>Type:	<input type="text" id= "type"  placeholder="style" 			class="field"></label>
+				<input type="submit" value="Send" class="button" id="bt-register" onclick="register();">
+			</form>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
+</body>
+</html>
